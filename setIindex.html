@@ -38,13 +38,28 @@
             </div>
         </div>
 
+        <!-- Charts -->
+        <div class="row mt-3 mb-3">
+            <div class="col-12 col-md-6 w-100 mb-4 mb-md-0">
+                <div class="graphSec px-2">
+                    <h4 class="text-center py-3">Monthly Sales</h4>
+                    <canvas id="monthlySales" width="400" height="300"></canvas>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 w-100">
+                <div class="graphSec px-2">
+                    <h4 class="text-center py-3">Department Sales</h4>
+                    <canvas id="deptSales" class="pb-2" width="400" height="300"></canvas>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Over $1000 -->
     <div class="container py-3">
         <div class="d-flex flex-row justify-content-between pb-3">
-            <button type="button" class="btn btn-outline-primary" onclick="findSale()"><span class="oi oi-magnifying-glass pr-2"></span>Find Sale</button>
-            <button type="button" class="btn btn-outline-secondary" onclick="fillValue()"><span class="oi oi-brush pr-2"></span>Fill Sales</button>
+            <button type="button" class="btn btn-outline-primary" onclick="addTotal()"><span class="oi oi-magnifying-glass pr-2"></span>Add Total</button>
+            <button type="button" class="btn btn-outline-secondary" onclick="deletVal()"><span class="oi oi-brush pr-2"></span>Delete Sales</button>
         </div>
     </div>
 
@@ -83,7 +98,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="itemAmount"><small class="text-muted">Item Amount:</small></label>
-                                <input type="number" class="form-control" id="itemAmount" aria-describedby="emailHelp" placeholder="Enter amount">
+                                <input type="email" class="form-control" id="itemAmount" aria-describedby="emailHelp" placeholder="Enter name">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1"><small class="text-muted">Department</small></label><br>
@@ -129,7 +144,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.2/dist/Chart.min.js"></script>
 
     <!-- Page JS -->
-    <script src="js/page.js"></script>
+    <script src="js/Set.js"></script>
 
 </body>
 
